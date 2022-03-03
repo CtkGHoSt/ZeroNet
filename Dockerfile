@@ -30,4 +30,4 @@ WORKDIR /root
 CMD (! ${ENABLE_TOR} || tor&) && python3 zeronet.py --ui_ip 0.0.0.0 --fileserver_port 26117
 
 #Expose ports
-EXPOSE 43110 26117
+EXPOSE 80 26117
